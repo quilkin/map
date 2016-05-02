@@ -696,10 +696,13 @@ namespace BleLog
             }
             try
             {
-
-                string query = string.Format("insert into locations (lat,lon) values ('{0}','{1}')",
-                        loc.Latitude, loc.Longitude);
-
+                string T = TimeString(DateTime.Now);
+                //int T = (int)TimeSpan.FromTicks(DateTime.Now.Ticks).TotalMinutes;
+                //DateTime Tbase = new DateTime(2000, 1, 1);
+                //int Tb = (int)TimeSpan.FromTicks(Tbase.Ticks).TotalMinutes;
+                //T = T -Tb;
+                string query = string.Format("insert into locations (lat,lon,dt) values ('{0}','{1}','{2}')",
+                        loc.Latitude, loc.Longitude,T);
 
 
                 using (System.Data.SqlClient.SqlCommand command = new SqlCommand(query, ttConnection))
@@ -707,7 +710,7 @@ namespace BleLog
                     successRows = command.ExecuteNonQuery();
                 }
                 if (successRows == 1)
-                    result = string.Format("Location {0} {1} saved OK", loc.Latitude, loc.Longitude);
+                    result = string.Format("Location {0} {1} saved OK at {2}", loc.Latitude, loc.Longitude,DateTime.Now);
                 else
                     result = string.Format("Database error: Location not saved");
 

@@ -18,11 +18,24 @@
                         }
                     ]
                 }
+            },
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Globalization\"><param name=\"android-package\" value=\"org.apache.cordova.globalization.Globalization\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
             }
         }
     },
     "installed_plugins": {
         "org.apache.cordova.geolocation": {
+            "PACKAGE_NAME": "io.cordova.myapp348c01fc08b341a98dd2202dfbf27687"
+        },
+        "org.apache.cordova.globalization": {
             "PACKAGE_NAME": "io.cordova.myapp348c01fc08b341a98dd2202dfbf27687"
         }
     },

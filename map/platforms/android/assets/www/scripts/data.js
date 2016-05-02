@@ -5,11 +5,11 @@
 
     function urlBase() {
         //if (ttApp.isMobile()) {
-            return "http://www.quilkin.co.uk/Service1.svc/";
+        //    return "http://www.quilkin.co.uk/Service1.svc/";
         //    // return "http://quilkin.azurewebsites.net/Service1.svc/"
         //}
 
-        //return "http://www.timetrials.org.uk/Service1.svc/";
+        return "http://www.quilkin.co.uk/Service1.svc/";
         //return "http://localhost:59555/Service1.svc/";
 
     }

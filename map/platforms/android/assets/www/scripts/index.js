@@ -4,22 +4,38 @@
 // and then run "window.location.reload()" in the JavaScript Console.
 (function () {
     "use strict";
-
+    var dateToDisplay = '';
     document.addEventListener( 'deviceready', onDeviceReady.bind( this ), false );
+    //document.addEventListener('deviceready', alertDateString(), false);
 
     function onDeviceReady() {
         // Handle the Cordova pause and resume events
         document.addEventListener( 'pause', onPause.bind( this ), false );
         document.addEventListener( 'resume', onResume.bind( this ), false );
-        
+        //checkDateString();
+        alertDateString()
         // TODO: Cordova has been loaded. Perform any initialization that requires Cordova here.
         //configureBackgroundGeoLocation();
         //myMap.watchPosition();
 
     };
+    function alertDateString() {
+        alert(checkDateString());
+    }
+    function checkDateString() {
+        navigator.globalization.dateToString(
+          new Date(),
+          //function (date) { alert('date: ' + date.value + '\n'); },
+          function (date) { dateToDisplay = date.value; },
+          function () { dateToDisplay = 'Error getting dateString\n'; },
+          { formatLength: 'short', selector: 'date and time' }
+        );
+        return dateToDisplay;
+    }
 
     $(document).ready(function () {
         myMap.create();
+ 
     });
 
     function onPause() {
