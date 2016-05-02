@@ -15,7 +15,6 @@
     }
     function webRequestFailed(handle, status, error) {
         alert("Error ajax request: " + error);
-       // $("#submitButton").removeAttr("disabled");
     }
 
     data.json = function (url, type, data, successfunc, async) {
