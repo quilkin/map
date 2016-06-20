@@ -4,35 +4,19 @@
         "uninstalled": []
     },
     "config_munge": {
-        "files": {
-            "AndroidManifest.xml": {
-                "parents": {
-                    "/*": [
-                        {
-                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
-                            "count": 1
-                        }
-                    ]
-                }
-            },
-            "res/xml/config.xml": {
-                "parents": {
-                    "/*": [
-                        {
-                            "xml": "<feature name=\"Globalization\"><param name=\"android-package\" value=\"org.apache.cordova.globalization.Globalization\" /></feature>",
-                            "count": 1
-                        }
-                    ]
-                }
-            }
-        }
+        "files": {}
     },
     "installed_plugins": {
-        "org.apache.cordova.geolocation": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "io.cordova.myapp348c01fc08b341a98dd2202dfbf27687"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "io.cordova.myapp348c01fc08b341a98dd2202dfbf27687"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "io.cordova.myapp348c01fc08b341a98dd2202dfbf27687"
+        },
+        "cordova-plugin-media": {
             "PACKAGE_NAME": "io.cordova.myapp348c01fc08b341a98dd2202dfbf27687"
         },
         "org.apache.cordova.globalization": {
