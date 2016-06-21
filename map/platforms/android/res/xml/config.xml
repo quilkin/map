@@ -27,12 +27,16 @@
     <splash density="port-mdpi" src="res/screens/android/screen-mdpi-portrait.png" />
     <splash density="port-xhdpi" src="res/screens/android/screen-xhdpi-portrait.png" />
     <name>map</name>
-    <description>A blank project that uses Apache Cordova to help you build an app that targets multiple mobile platforms: Android, iOS, Windows, and Windows Phone.</description>
+    <description>Cycle routing with voice commands</description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">Apache Cordova Team </author>
     <content src="index.html" />
     <access origin="*" />
     <vs:features />
     <preference name="SplashScreen" value="screen" />
-    <preference name="windows-target-version" value="8.1" />
-    <preference name="windows-phone-target-version" value="8.1" />
+    <plugin name="org.apache.cordova.globalization" version="0.3.4" />
+    <plugin name="cordova-plugin-media" version="2.3.0" />
+    <plugin name="cordova-plugin-compat" version="1.0.0" />
+    <plugin name="cordova-plugin-file" version="4.2.0" />
+    <plugin name="cordova-plugin-geolocation" version="2.2.0" />
+    <plugin name="org.apache.cordova.plugin.tts" src="https://github.com/domaemon/org.apache.cordova.plugin.tts" version="0.2.1" />
 </widget>

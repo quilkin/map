@@ -15,6 +15,12 @@
         //// TODO: Cordova has been loaded. Perform any initialization that requires Cordova here.
         //configureBackgroundGeoLocation();
         //myMap.watchPosition();
+        TTS
+            .speak('hello, world!', function () {
+                alert('success');
+            }, function (reason) {
+                alert(reason);
+});
 
     };
 

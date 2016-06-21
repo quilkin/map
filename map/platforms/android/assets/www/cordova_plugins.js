@@ -190,6 +190,13 @@ module.exports = [
         "clobbers": [
             "navigator.globalization"
         ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.plugin.tts/www/tts.js",
+        "id": "org.apache.cordova.plugin.tts.tts",
+        "clobbers": [
+            "navigator.tts"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -199,7 +206,8 @@ module.exports.metadata =
     "cordova-plugin-file": "4.2.0",
     "cordova-plugin-geolocation": "2.2.0",
     "cordova-plugin-media": "2.3.0",
-    "org.apache.cordova.globalization": "0.3.4"
-};
+    "org.apache.cordova.globalization": "0.3.4",
+    "org.apache.cordova.plugin.tts": "0.2.1"
+}
 // BOTTOM OF METADATA
 });

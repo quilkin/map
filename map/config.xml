@@ -90,4 +90,5 @@
   <plugin name="cordova-plugin-compat" version="1.0.0" />
   <plugin name="cordova-plugin-file" version="4.2.0" />
   <plugin name="cordova-plugin-geolocation" version="2.2.0" />
+  <plugin name="org.apache.cordova.plugin.tts" version="0.2.1" src="https://github.com/domaemon/org.apache.cordova.plugin.tts" />
 </widget>

@@ -44,5 +44,26 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "au.id.currie.tts": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/wcurrie/tts-cordova-plugin",
+            "subdir": "."
+        }
+    },
+    "cordova-plugin-tts": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/vilic/cordova-plugin-tts",
+            "subdir": "."
+        }
+    },
+    "org.apache.cordova.plugin.tts": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/domaemon/org.apache.cordova.plugin.tts",
+            "subdir": "."
+        }
     }
 }

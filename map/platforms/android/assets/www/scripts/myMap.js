@@ -261,7 +261,15 @@ var myMap = (function ($) {
         //if (route == undefined) {
         //if (routes.length == 0)
         var marker = L.marker([centre.lat, centre.lng]).addTo(map);
-        responsiveVoice.speak("Added a point");
+        //responsiveVoice.speak("Added a point");
+        //window.plugins.TTS.speak("Added a point", function () {
+        //        alert('success');
+        //    }, function (reason) {
+        //        alert(reason);
+        //    });
+        tts.startup();
+
+        tts.speak('whatever');
         if (wayPoints.length === 1) {
             marker = L.marker([centre.lat, centre.lng], { icon: greenIcon }).addTo(map);
             markers.push(marker);
